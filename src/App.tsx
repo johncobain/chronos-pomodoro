@@ -1,35 +1,29 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
+import './styles/theme.css';
+import './styles/global.css';
+import { Heading } from './components/Heading';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export const App = () => {
   return (
     <>
       <div>
-        <a href='https://vite.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
+        <Heading>Hey, Laddies</Heading>
+        <p>Oh oh Oh oh </p>
+        <h2>When you're hot, you're hot</h2>
+        <h3>And when you're not, you're not</h3>
       </div>
-      <h1>Hey Fellas</h1>
-      <div className='card'>
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <hr />
+      <div>
+        <Heading>Hey, Fellas</Heading>
+        <p>Oh oh Oh oh </p>
+        <h2>When you're hot, you're hot</h2>
+        <h3>And when you're not, you're not</h3>
       </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+        enim itaque voluptas quas excepturi sit necessitatibus, dolore optio
+        distinctio ipsum harum, voluptatibus officia alias nihil omnis nulla
+        aperiam! Consequatur, omnis!
       </p>
     </>
   );
-}
-
-export default App;
+};
