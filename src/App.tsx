@@ -1,12 +1,18 @@
 import './styles/theme.css';
 import './styles/global.css';
 import { Heading } from './components/Heading';
+import { TimerIcon } from 'lucide-react';
 
 export const App = () => {
   return (
     <>
       <div>
-        <Heading>Hey, Laddies</Heading>
+        <Heading>
+          Hey, Laddies
+          <button>
+            <TimerIcon />
+          </button>
+        </Heading>
         <p>Oh oh Oh oh </p>
         <h2>When you're hot, you're hot</h2>
         <h3>And when you're not, you're not</h3>
